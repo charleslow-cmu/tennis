@@ -3,19 +3,14 @@
   <head>
     <meta charset="utf-8">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>My test page</title>
   </head>
   <body>
     <h1>Part 1</h1>
     <p>This is a paragraph</p>
     <div id="myDiv"></div>
-    <div id="tester" style="width:600px;height:250px;"></div>
-    <script>
-	TESTER = document.getElementById('tester');
-	Plotly.plot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
-	margin: { t: 0 } } );
-    </script>
+    <div id="tester" style="width:1200px;height:500px;"></div>
+    <script src="scatter.js"></script>
   </body>
 </html>
