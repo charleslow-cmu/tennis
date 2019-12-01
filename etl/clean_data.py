@@ -1,10 +1,31 @@
+import googlemaps as googlemaps
 import pandas as pd
 import os
 import sys
 import numpy as np
 import re
-from datetime import date
+from datetime import datetime, date
 import matplotlib
+import googlemaps
+
+# Take two locations and return their lat,lon
+# Directions Client
+def get_gmap_key():
+    with open("environment.txt") as f:
+        k, v = f.read().split("=")
+    return v.strip()
+gmaps = googlemaps.Client(key=get_gmap_key())
+
+def get_latlon(location):
+    try:
+        results = gmaps.geocode(location)
+        bounds = results[0]['geometry']['bounds']
+        lat = np.mean([bounds['northeast']['lat'], bounds['southwest']['lat']])
+        lng = np.mean([bounds['northeast']['lng'], bounds['southwest']['lng']])
+        return (lng, lat)
+    except:
+        return (0,0)
+
 
 def clean_forex(df):
     df['year'] = df['DATE'].str.slice(0,4).map(int)
@@ -128,13 +149,29 @@ def convert_currency(amount, from_currency, year):
     converted_amount = amount / rate / inflation_index
     return round(converted_amount)
 
+def make_location_dictionary(df):
+    unique_locations = df.location.unique().tolist()
+    location_dict = {}
+    for location in unique_locations:
+        location_dict[location] = get_latlon(location)
+    location_df = pd.DataFrame.from_dict(location_dict, orient='index').reset_index()
+    location_df.columns = ['location', 'lng', 'lat']
+    location_df = location_df[~((location_df['lng'] == 0) & (location_df['lat'] == 0))]
+    location_df.to_csv("clean/locations.csv", index=False)
+
+def impute_lonlat(df):
+    locations = pd.read_csv("clean/locations.csv")
+    df = pd.merge(df, locations, on=["location"], how="left")
+    return df
 
 def make_tournaments(df):
     tournaments = df.loc[:, ['year', 'tourney', 'location', 'surface', 'money']].drop_duplicates().dropna()
+    tournaments = impute_lonlat(tournaments)
     tournaments['currency'] = tournaments.money.str.slice(0, 1)
     tournaments['money'] = tournaments.apply(lambda row: \
         convert_currency(row['money'], row['currency'], row['year']), axis=1)
-    return tournaments.loc[:, ['tourney', 'year', 'location', 'surface', 'money']].reset_index(drop=True)
+    columns_keep = ['tourney', 'year', 'location', 'lng', 'lat', 'surface', 'money']
+    return tournaments.loc[:, columns_keep].reset_index(drop=True)
 
 
 if __name__ == '__main__':
@@ -154,7 +191,10 @@ if __name__ == '__main__':
 
     # Surface Prize Money
     tournaments = make_tournaments(df)
-    tournaments.to_csv("final/tournaments.csv", index=False)
-
     surfaces = tournaments.groupby(['year', 'surface']).agg({"money": "sum"}).reset_index()
+    surfaces['money'] = surfaces['money'].map(lambda x: round(x / 100000) * 100000)
     surfaces.to_csv("final/surfaces.csv", index=False)
+
+    # Tournaments (with geolocation)
+    tournaments = tournaments.dropna()
+    tournaments.to_csv("final/tournaments.csv", index=False)
