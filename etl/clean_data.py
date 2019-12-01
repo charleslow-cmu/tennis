@@ -38,7 +38,9 @@ def clean_raw_data(df):
     df['day'] = temp[2].map(safe_int)
     return df
 
+
 def make_player_scores(df):
+
     winners = df.groupby("winner").day.count().reset_index() \
         .rename(columns={"winner": "player", "day": "wins"})
     losers = df.groupby("loser").day.count().reset_index() \
@@ -46,8 +48,28 @@ def make_player_scores(df):
     player_scores = pd.merge(winners, losers, on="player", how="outer") \
         .fillna(0)
     player_scores['matches'] = player_scores['wins'] + player_scores['losses']
+    player_scores = player_scores[player_scores['matches'] > 50]
+    return player_scores
 
-    player_scores = player_scores[player_scores['matches'] > 5]
+
+def make_player_scores_by_year(df, unique_players):
+
+    # Winners
+    winners = df.groupby(["winner", "year"]).day.count().reset_index() \
+        .rename(columns={"winner": "player", "day": "wins"})
+    winners = winners[winners['player'].isin(unique_players)]
+
+    # Losers
+    losers = df.groupby(["loser", "year"]).day.count().reset_index() \
+        .rename(columns={"loser": "player", "day": "losses"})
+    losers = losers[losers['player'].isin(unique_players)]
+
+    # Merge
+    player_scores = pd.merge(winners, losers, on=["player", "year"], how="outer") \
+        .fillna(0)
+    player_scores['wins'] = player_scores['wins'].astype(int)
+    player_scores['losses'] = player_scores['losses'].astype(int)
+    player_scores['year'] = player_scores['year'].astype(int)
     return player_scores
 
 if __name__ == '__main__':
@@ -58,5 +80,12 @@ if __name__ == '__main__':
     df.to_csv("clean/data.csv", index=False)
 
     # Scatterplot
+    df = pd.read_csv("clean/data.csv")
     player_scores = make_player_scores(df)
     player_scores.to_csv("final/player_scores.csv", index=False)
+
+    unique_players = player_scores.player.tolist()
+    player_scores_by_year = make_player_scores_by_year(df, unique_players)
+    player_scores_by_year.to_csv("final/player_scores_by_year.csv", index=False)
+
+

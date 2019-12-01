@@ -77,6 +77,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminde
       })
     })
   }
+  console.log(frames);
 
   // Now create slider steps, one for each frame. The slider
   // executes a plotly.js API command (here, Plotly.animate).
@@ -112,36 +113,6 @@ Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminde
 	 // passing `[null]`, which indicates we'd like to interrupt any
 	 // currently running animations with a new list of frames. Here
 	 // The new list of frames is empty, so it halts the animation.
-    updatemenus: [{
-      x: 0,
-      y: 0,
-      yanchor: 'top',
-      xanchor: 'left',
-      showactive: false,
-      direction: 'left',
-      type: 'buttons',
-      pad: {t: 87, r: 10},
-      buttons: [{
-        method: 'animate',
-        args: [null, {
-          mode: 'immediate',
-          fromcurrent: true,
-          transition: {duration: 300},
-          frame: {duration: 500, redraw: false}
-        }],
-        label: 'Play'
-      }, {
-        method: 'animate',
-        args: [[null], {
-          mode: 'immediate',
-          transition: {duration: 0},
-          frame: {duration: 0, redraw: false}
-        }],
-        label: 'Pause'
-      }]
-    }],
-	 // Finally, add the slider and use `pad` to position it
-	 // nicely next to the buttons.
     sliders: [{
       pad: {l: 130, t: 55},
       currentvalue: {
@@ -155,7 +126,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminde
   };
 
   // Create the plot:
-  Plotly.plot('myDiv', {
+  Plotly.plot('player_scores', {
     data: traces,
     layout: layout,
     frames: frames,

@@ -62,8 +62,7 @@ def get_tourney_details(driver, url):
             tourneySurface = get_court_surface(driver)
             tourneyMoney = get_prize_money(driver)
         except:
-            print("Problem with url: {}".format(url))
-            traceback.print_exc()
+            pass
 
         if tourneyTitle == "" or tourneyLocation == "" or tourneyDates == "" \
                 or tourneySurface == "" or tourneyMoney == "":
@@ -72,7 +71,7 @@ def get_tourney_details(driver, url):
 
             # If loop too many times
             if i > 2:
-                print("Could not parse for url: {}".format(url))
+                print("get_tourney_details Exception for: {}".format(url))
                 break
         else:
             # string = "Title:" + tourneyTitle + "|Location:" + \
@@ -84,21 +83,24 @@ def get_tourney_details(driver, url):
 
 
 # Get table of Scores
-def get_scores_dataframe(driver):
-    scoresTable = driver.find_element_by_class_name("scores-results-content")
-    scores = scoresTable.find_elements_by_css_selector("tr")
+def get_scores_dataframe(driver, url):
     winner_list = []
     loser_list = []
-    for scoreRow in scores:
-        names = scoreRow.find_elements_by_class_name("day-table-name")
-        if (len(names) == 0):
-            continue
-        else:
-            winner = names[0].get_property("innerText")
-            winner_list.append(winner)
-            loser = names[1].get_property("innerText")
-            loser_list.append(loser)
-            # print("{} DEFEAT {}".format(winner,loser))
+    try:
+        scoresTable = driver.find_element_by_class_name("scores-results-content")
+        scores = scoresTable.find_elements_by_css_selector("tr")
+        for scoreRow in scores:
+            names = scoreRow.find_elements_by_class_name("day-table-name")
+            if (len(names) == 0):
+                continue
+            else:
+                winner = names[0].get_property("innerText")
+                winner_list.append(winner)
+                loser = names[1].get_property("innerText")
+                loser_list.append(loser)
+                # print("{} DEFEAT {}".format(winner,loser))
+    except:
+        print("get_score Exception for: {}".format(url))
 
     df = pd.DataFrame({"winner":winner_list, "loser":loser_list})
     return(df)
@@ -112,21 +114,24 @@ def get_tourney_results(url, yr):
     driver = webdriver.Chrome(CHROME_DRIVER_PATH, options=options)
     driver.implicitly_wait(10)
 
+    try:
     # Get Tourney details
-    driver.get(url)
-    driver.implicitly_wait(20)
-    tourneyTitle, tourneyLocation, tourneyDates, tourneySurface, tourneyMoney = get_tourney_details(driver, url)
+        driver.get(url)
+        driver.implicitly_wait(20)
+        tourneyTitle, tourneyLocation, tourneyDates, tourneySurface, tourneyMoney = get_tourney_details(driver, url)
 
-    # Get Scores
-    df = get_scores_dataframe(driver)
+        # Get Scores
+        df = get_scores_dataframe(driver, url)
 
-    # Save to file
-    file_name = tourneyTitle + "|" + tourneyLocation + "|" + tourneyDates + \
-        "|" + tourneySurface + "|" + tourneyMoney + ".csv"
-    file_name = file_name.replace("/", "-")
-    df.to_csv("raw/" + yr + "/" + file_name, index=False)
-    print("Saved {}: {} entries".format(file_name, df.shape[0]))
-    driver.close()
+        # Save to file
+        file_name = tourneyTitle + "|" + tourneyLocation + "|" + tourneyDates + \
+            "|" + tourneySurface + "|" + tourneyMoney + ".csv"
+        file_name = file_name.replace("/", "-")
+        df.to_csv("raw/" + yr + "/" + file_name, index=False)
+        print("Saved {}: {} entries".format(file_name, df.shape[0]))
+        driver.close()
+    except:
+        driver.close()
 
 
 def navigate_to_yr(driver, yr):
@@ -184,7 +189,7 @@ def scrape_data(sleepTime=10, dump=False):
     driver.implicitly_wait(sleepTime)
 
     try:
-        for yr in range(2017, 1949, -1):
+        for yr in range(2009, 1949, -1):
 
             # Make Directory for raw data
             yr = str(yr)
@@ -197,7 +202,7 @@ def scrape_data(sleepTime=10, dump=False):
             data_tuples = get_urls(driver, yr)
 
             # Spawn threads
-            p = Pool(7)
+            p = Pool(5)
             p.starmap(get_tourney_results, data_tuples)
 
         # Close Driver
@@ -211,5 +216,5 @@ if __name__=="__main__":
     set_project_directory()
     scrape_data(sleepTime=10)
 
-    # url = "https://www.atptour.com/en/scores/archive/london/311/2018/results"
-    # get_tourney_results(url, "2018")
+    # url = "https://www.atptour.com/en/scores/archive/doha/451/2011/results"
+    # get_tourney_results(url, "2011")
