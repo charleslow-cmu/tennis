@@ -189,7 +189,7 @@ def scrape_data(sleepTime=10, dump=False):
     driver.implicitly_wait(sleepTime)
 
     try:
-        for yr in range(2009, 1949, -1):
+        for yr in range(1989, 1949, -1):
 
             # Make Directory for raw data
             yr = str(yr)
@@ -202,8 +202,10 @@ def scrape_data(sleepTime=10, dump=False):
             data_tuples = get_urls(driver, yr)
 
             # Spawn threads
-            p = Pool(5)
+            p = Pool(20)
             p.starmap(get_tourney_results, data_tuples)
+            p.close()
+            p.join()
 
         # Close Driver
         driver.close()

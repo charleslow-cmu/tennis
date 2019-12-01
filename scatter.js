@@ -2,7 +2,6 @@ function makeplot() {
   Plotly.d3.csv("final/player_scores_by_year.csv", function(data){ processData(data) } );
 };
 
-
 function processData(data) {
 
   // Go through each row and get unique players
@@ -15,7 +14,6 @@ function processData(data) {
       j++;
     }
   }
-  console.log(players);
   
   var lookup = {};
   function getData(year) {
@@ -24,7 +22,6 @@ function processData(data) {
       trace = lookup[year] = {
         x: [],
         y: [],
-	ratio: [],
 	ids: [],
         text: []
       };
@@ -36,11 +33,11 @@ function processData(data) {
   for (var i = 0; i < data.length; i++) {
     var datum = data[i];
     var trace = getData(datum.year);
+    var playerId = players[datum.player];
     trace.text.push(datum.player);
     trace.x.push(parseInt(datum.losses));
     trace.y.push(parseInt(datum.wins));
-    trace.ratio.push(parseInt(datum.wins) + 1 / parseInt(datum.losses) + 1);
-    trace.ids.push(players[datum.player]);
+    trace.ids.push(playerId);
   }
 
   // Get the group names:
@@ -97,12 +94,12 @@ function makePlotly(years, traces, frames) {
     title: 'Player Wins vs Losses',
     xaxis: {
       title: 'Losses',
-      range: [-4, 34],
+      range: [-4, 44],
       zeroline: false
     },
     yaxis: {
       title: 'Wins',
-      range: [-4, 74],
+      range: [-4, 128],
       showline: false,
       zeroline: false
     },
@@ -116,15 +113,44 @@ function makePlotly(years, traces, frames) {
       pad: 0
     },
     hovermode: 'closest',
+    updatemenus: [{
+      x: 0,
+      y: 0,
+      yanchor: 'top',
+      xanchor: 'left',
+      showactive: false,
+      direction: 'left',
+      type: 'buttons',
+      pad: {t: 87, r: 10},
+      buttons: [{
+        method: 'animate',
+        args: [null, {
+          mode: 'immediate',
+          fromcurrent: true,
+          transition: {duration: 1000, easing: 'linear'},
+          frame: {duration: 1000, redraw: false}
+        }],
+        label: 'Play'
+      }, {
+        method: 'animate',
+        args: [[null], {
+          mode: 'immediate',
+          transition: {duration: 0},
+          frame: {duration: 0, redraw: false}
+        }],
+        label: 'Pause'
+      }]
+    }],
     sliders: [{
-      pad: {l: 50, t: 55},
+      pad: {l: 120, t: 55},
       currentvalue: {
         visible: true,
         prefix: 'Year:',
         xanchor: 'right',
         font: {size: 20, color: '#666'}
       },
-      steps: sliderSteps
+      steps: sliderSteps,
+      active: years.length - 1
     }]
   };
 
