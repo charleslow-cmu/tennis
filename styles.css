@@ -6,14 +6,37 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   margin: 2em auto 0em auto;
+  color: #444440;
 }
 
 body {
-  max-width: 800px;
+  max-width: 720px;
   margin: 1em auto 4em auto;
+  font-size: 20px;
+  line-height: 1.3em;
+  position: relative;
+  padding-right:50px;
+  color: #4b4c40;
 }
 
-body > div {
+div {
+  max-width: 900px;
+}
+
+p { 
+}
+.carpet {
+  color: #9d00f2;
+}
+.clay {
+  color: #d2410a;
+}
+.grass {
+  color: #7a9755;
+}
+.hard {
+  color: #567b96;
 }

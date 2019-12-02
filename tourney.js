@@ -54,7 +54,7 @@ Plotly.d3.csv("final/tournaments.csv", function(data) {
   var firstYear = lookup[years[0]];
   var surfaces = Object.keys(firstYear).sort();
   console.log(surfaces);
-  var colors = ["#ca6a45", "#d2410a", "#7a9755", "#567b96"];
+  var colors = ["#9d00f2", "#d2410a", "#7a9755", "#567b96"];
 
   // Create the main trace
   var traces = [];
@@ -116,7 +116,7 @@ function makeTourneyPlotly(years, traces, frames) {
   var layout = {
     title: 'Tournaments by Prize Money',
     autosize: true,
-    showlegend: false,
+    showlegend: true,
     geo: {
 	projection: {
 	  type: 'robinson'
@@ -139,8 +139,8 @@ function makeTourneyPlotly(years, traces, frames) {
         countrywidth: 1.5,
         subunitcolor: '#E5E5E5'
     },
-    width: 800,
-    height: 500,
+    width: 900,
+    height: 550,
     margin: {
       l: 0,
       r: 0,

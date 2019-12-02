@@ -24,7 +24,7 @@ function processSurfaceData(data) {
     trace.y.push(parseInt(datum.money));
   }
   var surfaces = Object.keys(lookup);
-  var colors = ["#ca6a45", "#d2410a", "#7a9755", "#567b96"];
+  var colors = ["#9d00f2", "#d2410a", "#7a9755", "#567b96"];
 
   // Create traces
   var traces = [];
@@ -59,7 +59,7 @@ function makeSurfacePlotly(traces) {
       showline: false,
       zeroline: false
     },
-    width: 800,
+    width: 720,
     height: 450,
     margin: {
       l: 60,
