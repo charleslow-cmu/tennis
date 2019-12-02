@@ -45,7 +45,7 @@ Plotly.d3.csv("final/elo1990s.csv", function(data) {
   }
 
   var layout = {
-    title: 'ELO History of Top Players (1990s)',
+    title: 'ELO History of Top Players',
     xaxis: {
       title: 'Date',
       zeroline: false
@@ -55,8 +55,8 @@ Plotly.d3.csv("final/elo1990s.csv", function(data) {
       showline: false,
       zeroline: false
     },
-    width: 800,
-    height: 500,
+    width: 850,
+    height: 600,
     margin: {
       l: 60,
       r: 0,

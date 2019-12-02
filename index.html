@@ -7,54 +7,67 @@
     <title>ATP Tennis Visualizer</title>
   </head>
   <body>
-    <h1>ATP Tennis Visualizer</h1>
-    <p>If you follow ATP tennis, it would be clear who the big names are. However, do you know which was Nadal's best year of tennis? Do you know which tournament offers the highest prize money? Have you heard of tournaments with carpet surface? If such trivia interest you, read on!</p>
-    <p>In this interactive data visualization website, we will be exploring the following questions:</p>
+    <h1>A Brief History of ATP Tennis</h1>
+    <p>If you follow ATP tennis, it would be clear who the big names are. We all know about Rafael Nadal, Novak Djokovic and of course, Roger Federer. However, digging into the statistics on the ATP Men's Tour has unveiled some interesting nuggets of information. For example, did you know that carpeted surfaces used to be in vogue? Do you know how ATP tournaments expanded across the globe? And of course the big question: do you know who is the greatest player of all time (G.O.A.T)?</p> 
+    <p>I won't try to answer the last question, but you can draw your own conclusions after looking at the data ;). In this interactive data visualization website, we will be exploring the following questions:</p>
     <ul>
+
+	    <li>How did ATP tournaments evolve over time? We will explore the mix of tournament surfaces, and geographical locations of ATP tournaments</li>
 	    <li>How did top players' win/loss ratios change over the years?</li>
-	    <li>Using ELO rankings, how did their rankings change over time?</li>
-	    <li>What would happen if certain surfaces were not in play? Would Nadal still be Nadal without Clay?</li>
+	    <li>More specifically, how did these top players climb to the top? Did their performance fluctuate, or were they did they climb steadily to the top? Using ELO rankings, we will create a measure of each player's skill over time to closely measure this.</li>
     </ul>
 
-
     <h2>Tournament Surfaces</h2>
-    <p>What tournament surfaces were most popular and had the highest prize money offered? Here we have a look at total prize money over the years for each court surface. Note that prize money has been converted from the original currency to US Dollars, and inflation has been accounted for.</p>
+    <p>What tournament surfaces were most popular and had the highest prize money offered? Here we have a look at total prize money over the years for each court surface. Note that prize money has been converted from the original currency to US Dollars, and corrected for inflation.</p>
     <div id="tournament_surface"></div>
     <script src="surface.js"></script>
     <p>It is immediately clear how total prize money has exploded over the years as tennis has become more commercialized. In particular, there seems to be two waves of increase, the first in 1990 and the second in 2014. Interestingly, carpet used to be a prominent surface, until it was outlawed in 2009 as there were too many injuries on that surface. We can also see that grass tournaments actually only account for a small slice of the prize money pool, whilst Hard Courts have become the most popular surface, probably owing to its ease of maintenance and durability over time. Notice also the dip in prize money in 2008, owing to the great recession.</p>
-
 
     <h2>Global Interest</h2>
     <p>One dimension of tennis is that it has become more globalized over time. Let's look at how it spread across the globe over time.</p>
     <div id="tournament"></div>
     <script src="tourney.js"></script>
-    <p>As we can see, tennis has always been a popular sport in Europe, but we can see it spread to other continents over time. Perhaps the first striking thing is that there used to be many smaller tournaments especially scattered across the US. However, over time there has been a consolidation toward less, but larger tournaments. In particular, the grand slams did not seem to be that big of a deal in the past, but the prize money for these tournaments has overshadowed other tournaments in more recent years (look for the biggest bubbles!).</p>
-    <p>Interestingly, <span class='grass'>Grass</span> and <span class="clay">Clay</span> used to be more popular surfaces, but they got replaced by  <font color="#567b96">Hard courts</font> over time. Another surprising fact was that the Australian Open used to be played on Grass way back in the 1980s, but it has switched to Hard courts since.</p> 
+    <p>As we can see, tennis has always been a popular sport in Europe (and continues to be so), but we can see it spread to other continents over time. Perhaps the first striking thing is that there used to be many smaller tournaments especially scattered across the US. However, over time there has been a consolidation toward less, but larger tournaments. In particular, the grand slams did not seem to be that big of a deal in the past, but the prize money for these tournaments has grown and now overshadow all other tournaments in more recent years (look for the biggest bubbles!).</p>
+    <p>Another trend we see is that <span class='grass'>Grass</span> and <span class="clay">Clay</span> used to be more popular surfaces, but they have since been replaced by  <font color="#567b96">Hard courts</font> over time. Most surprisingly, the Australian Open used to be played on Grass in the 1980s, but it has switched to Hard courts since.</p> 
+    <p>You can try zooming into the Euro region to have a closer look at this crowded region!</p>
 
-    <h2>Player Scores</h2>
-    <p>How did each player fare based on overall wins and losses? Here is a scatterplot to show you. Mouse over to see player names.<p>
+    <h2>King of the Hill</h2>
+    <p>Most tennis fans are more interested in player statistics, and here we dive into that. How did each player fare in each year? Perhaps the simplest measure is to track how many games they won or lost. Below, we plot players wins against losses, and each bubble represents a player. Drag the slider to see how they performed over time. Players in the top-left region (many wins, few losses) are the best performing.</p>
     <div id="player_scores"></div>
     <script src="scatter.js"></script>
 
+    <p>There is much to say about this chart, but an immediate thought is, what a MESS! In more scientific terms, there is a lot of variation in player performance over time. We see players oscillating between good and bad years, and even the top players are susceptible.</p>
+    <p>If we focus on the top left region, we will see some familiar names climb into that hallowed region over time. In 1987, we see Ivan Lendl. In 1995, we see Andre Agassi. And in 2004-2006, perhaps further than anyone before him, Roger Federer stands alone. His reign gets challenged from 2008 onward, and we see the current Golden Era emerge with the big Three.</p>  
 
-    <h2>ELO</h2>
-    <p>Explanation of what is ELO</p>
+    <h2>Elo Rankings</h2>
+    <p>But, you might say, wins and losses don't tell us the whole picture. Surely WHO you won and WHO you lost to matters. Isn't that why people care about head-to-head scores? Well yes! In competitive head-to-head games like tennis (and originally Chess), Elo rankings are often used as a measure of a player's skill. In brief, a player's Elo ranking increases when they win a game, and it decreases when they lose a game. However, if someone beats a player with a much higher Elo ranking than himself, he gets more points. Conversely, if he loses to someone with a much lower Elo ranking, he loses lots of points.</p>
+
+    <p>Because the ATP data provides a match-by-match account of ATP history, we can construct an Elo ranking for each player and track it over time. Below, we explore the Elo ranking history of a few rivalries (past and present). The Elo ranking of each player is measured at the end of each tournament that he played in, so that we can see which tournaments boosted or crippled his ranking. Note that an Elo ranking of around 1000 means that the player is average, and higher Elo ranking is better.</p>
 
     <h2>1990s</h2>
-    <p>ELO Scores</p>
     <div id="elo1"></div>
     <script src="elo1.js"></script>
+    <p>This was the era of Sampras and Agassi, and a little earlier, Edberg and Becker. I do not know much about this era, but the striking thing is that there was no clear winner. The top players intertwined and weaved amongst each other. On the Sampras-Agassi rivalry, we see the sharp rise in Sampras' rankings towards the very end of his career, when he trumped Agassi at the 2002 US Open and retired soon after.</p>
+    <p>For Agassi himself, we see the famous decline in the 1996-1997 period (see <a href="https://en.wikipedia.org/wiki/Andre_Agassi#1994%E2%80%931997:_Rise_to_the_top,_Olympic_Gold_and_the_fall">Wikipedia</a>), as he suffered multiple injuries and even confessed to using drugs at this low point in his career. But we also see his subsequent resurgence and return to glory thereafter, and continued to play at a high level until his retirement in 2006.</p>
 
     <h2>2000s: The Big Four</h2>
-    <p>ELO Scores</p>
     <div id="elo2"></div>
     <script src="elo2.js"></script>
-
+    <p>This might be the era that we are most familiar with, as we see the meteoric rise of Federer, then Nadal and Djokovic. Their rankings were closest in the 2010 period, but Djokovic emerged from the strife as the standout winner in 2015. As of 2019 though, the top 3 are closer than ever before.</p>
+    <p>A more subtle point which illustrates the Elo ranking in effect is the period of 2005. If you could zoom into that period, you can see that Nadal rose incredibly quickly in the 2005 Clay season. However, if you look back at the win/loss ratio in 2005, you would see that Federer (80-4) actually had a better record than Nadal (77-10). Why then did Nadal's rankings climb so much quicker than Federer's? The reason is that Nadal was a young upstart at that time, and by beating top players his Elo ranking climbed quickly. In contrast, every game that Federer lost hurt his rankings significantly. Hence we see that even the Elo ranking is somewhat subjective, and depends on how much significance we attribute to a single game.</p>
 
     <h2>Next Generation</h2>
-    <p>ELO Scores</p>
     <div id="elo3"></div>
     <script src="elo3.js"></script>
+    <p>Lastly, it is apt to close off this blog with a look at the Next-Gen players. As of 2019, any of these players can be the next to challenge the reign of the big 3. And that's a wrap!</p>
 
+    <h2>Data</h2>
+    <p>The data used in this blog was scraped from the ATP website at https://www.atptour.com/en/scores/results-archive. Data for each tournament was stored as a separate file, and I scraped data from 1976-2019. Scores were not tracked, only whether player A beat player B, and the order in which matches occurred (which matters for Elo scoring).</p>
+    <p>Tournament details (surface, prize money and location) were scraped as well. Prize money was converted from the native currency (EUR, GBP and AUD) into US Dollars, and corrected for inflation using the US historic annual Consumer Price Index. Location was geocoded using Googlemap's Geocode API, but was not validated. Locations that could not be geocoded were discarded.</p>
+
+    <h2>References</h2>
+    <ul>
+	    <li>On the Elo algorithm: <a href="https://blog.mackie.io/the-elo-algorithm">https://blog.mackie.io/the-elo-algorithm</a></li>
+	    <li>For the Plotly JS API that was used for the visualisations: <a href="https://plot.ly/javascript/">https://plot.ly/javascript/</a></li>
   </body>
 </html>
