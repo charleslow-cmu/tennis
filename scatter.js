@@ -101,7 +101,7 @@ function makePlotly(years, traces, frames) {
       showline: false,
       zeroline: false
     },
-    width: 720,
+    width: 800,
     height: 600,
     margin: {
       l: 60,

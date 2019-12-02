@@ -59,7 +59,7 @@ function makeSurfacePlotly(traces) {
       showline: false,
       zeroline: false
     },
-    width: 720,
+    width: 800,
     height: 450,
     margin: {
       l: 60,
