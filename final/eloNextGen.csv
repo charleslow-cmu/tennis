@@ -1,0 +1,457 @@
+player,tourney,date,elo,surface,year,month,day
+Alexander Zverev,Metz,2011.09.19,983.4520384147943,Hard,2011,9.0,19.0
+Alexander Zverev,Hamburg,2013.07.15,978.1211947609512,Clay,2013,7.0,15.0
+Alexander Zverev,Metz,2013.09.16,998.6457131928064,Hard,2013,9.0,16.0
+Alexander Zverev,Auckland,2014.01.06,1006.4599669647293,Hard,2014,1.0,6.0
+Alexander Zverev,Delray Beach,2014.02.17,989.9541624304793,Hard,2014,2.0,17.0
+Alexander Zverev,Houston,2014.04.07,975.3311399866367,Clay,2014,4.0,7.0
+Alexander Zverev,Munich,2014.04.28,971.394094246422,Clay,2014,4.0,28.0
+Alexander Zverev,Dusseldorf,2014.05.18,996.8935637790396,Clay,2014,5.0,18.0
+Alexander Zverev,Stuttgart,2014.07.07,991.3531786619534,Clay,2014,7.0,7.0
+Alexander Zverev,Hamburg,2014.07.14,1122.0682965462697,Clay,2014,7.0,14.0
+Alexander Zverev,Umag,2014.07.21,1109.7284262215042,Clay,2014,7.0,21.0
+Alexander Zverev,Kitzbühel,2014.07.27,1089.9774493547604,Clay,2014,7.0,27.0
+Alexander Zverev,ATP Masters 1000 Cincinnati,2014.08.10,1078.5946730130634,Hard,2014,8.0,10.0
+Alexander Zverev,US Open,2014.08.25,1078.0417626412284,Hard,2014,8.0,25.0
+Alexander Zverev,Vienna,2014.10.13,1100.4292602207563,Hard,2014,10.0,13.0
+Alexander Zverev,Basel,2014.10.20,1098.6024876996096,Hard,2014,10.0,20.0
+Alexander Zverev,Brisbane,2015.01.04,1086.5940380363788,Hard,2015,1.0,4.0
+Alexander Zverev,Australian Open,2015.01.19,1064.3967119242443,Hard,2015,1.0,19.0
+Alexander Zverev,Montpellier,2015.02.02,1083.4857854817951,Hard,2015,2.0,2.0
+Alexander Zverev,Rotterdam,2015.02.09,1079.5573559719194,Hard,2015,2.0,9.0
+Alexander Zverev,Marseille,2015.02.16,1132.9499261665605,Hard,2015,2.0,16.0
+Alexander Zverev,Dubai,2015.02.23,1115.0833312999737,Hard,2015,2.0,23.0
+Alexander Zverev,ATP Masters 1000 Indian Wells,2015.03.12,1097.557474136103,Hard,2015,3.0,12.0
+Alexander Zverev,ATP Masters 1000 Miami,2015.03.25,1160.3239901181914,Hard,2015,3.0,25.0
+Alexander Zverev,Houston,2015.04.06,1142.7092597934093,Clay,2015,4.0,6.0
+Alexander Zverev,Munich,2015.04.27,1161.5560137359785,Clay,2015,4.0,27.0
+Alexander Zverev,Roland Garros,2015.05.24,1158.2632604033972,Clay,2015,5.0,24.0
+Alexander Zverev,Stuttgart,2015.06.08,1166.1229518091473,Grass,2015,6.0,8.0
+Alexander Zverev,Halle,2015.06.15,1179.7076403813048,Grass,2015,6.0,15.0
+Alexander Zverev,Nottingham,2015.06.21,1223.373284315496,Grass,2015,6.0,21.0
+Alexander Zverev,Wimbledon,2015.06.29,1228.9488573455199,Grass,2015,6.0,29.0
+Alexander Zverev,Bastad,2015.07.20,1286.92554815664,Clay,2015,7.0,20.0
+Alexander Zverev,Hamburg,2015.07.27,1273.0404039163968,Clay,2015,7.0,27.0
+Alexander Zverev,Washington,2015.08.03,1337.51034757933,Hard,2015,8.0,3.0
+Alexander Zverev,ATP Masters 1000 Cincinnati,2015.08.16,1348.8970106689305,Hard,2015,8.0,16.0
+Alexander Zverev,US Open,2015.08.31,1363.4015375080805,Hard,2015,8.0,31.0
+Alexander Zverev,Metz,2015.09.21,1346.3141429075365,Hard,2015,9.0,21.0
+Alexander Zverev,Kuala Lumpur,2015.09.28,1333.0659280475375,Hard,2015,9.0,28.0
+Alexander Zverev,Beijing,2015.10.05,1309.025989242455,Hard,2015,10.0,5.0
+Alexander Zverev,Stockholm,2015.10.19,1308.7496324389185,Hard,2015,10.0,19.0
+Alexander Zverev,Australian Open,2016.01.18,1306.755549944128,Hard,2016,1.0,18.0
+Alexander Zverev,Montpellier,2016.02.01,1340.6101800250913,Hard,2016,2.0,1.0
+Alexander Zverev,Rotterdam,2016.02.08,1376.0864998584118,Hard,2016,2.0,8.0
+Alexander Zverev,Marseille,2016.02.15,1385.424668964904,Hard,2016,2.0,15.0
+Alexander Zverev,ATP Masters 1000 Indian Wells,2016.03.10,1437.419615897534,Hard,2016,3.0,10.0
+Alexander Zverev,ATP Masters 1000 Miami,2016.03.23,1417.8103349284634,Hard,2016,3.0,23.0
+Alexander Zverev,ATP Masters 1000 Monte Carlo,2016.04.10,1393.8449218150936,Clay,2016,4.0,10.0
+Alexander Zverev,Barcelona,2016.04.18,1384.372000422176,Clay,2016,4.0,18.0
+Alexander Zverev,Munich,2016.04.25,1427.9292524148582,Clay,2016,4.0,25.0
+Alexander Zverev,ATP Masters 1000 Rome,2016.05.08,1447.0406853150173,Clay,2016,5.0,8.0
+Alexander Zverev,Nice,2016.05.15,1491.4538552028125,Clay,2016,5.0,15.0
+Alexander Zverev,Roland Garros,2016.05.22,1505.0477182140296,Clay,2016,5.0,22.0
+Alexander Zverev,Halle,2016.06.13,1549.766597348781,Grass,2016,6.0,13.0
+Alexander Zverev,Wimbledon,2016.06.27,1547.476051741976,Grass,2016,6.0,27.0
+Alexander Zverev,Hamburg,2016.07.11,1511.6385884615024,Clay,2016,7.0,11.0
+Alexander Zverev,Washington,2016.07.18,1515.820769645403,Hard,2016,7.0,18.0
+Alexander Zverev,ATP Masters 1000 Canada,2016.07.25,1487.6682278674427,Hard,2016,7.0,25.0
+Alexander Zverev,ATP Masters 1000 Cincinnati,2016.08.14,1455.1147823254855,Hard,2016,8.0,14.0
+Alexander Zverev,US Open,2016.08.29,1433.8965921204715,Hard,2016,8.0,29.0
+Alexander Zverev,St. Petersburg,2016.09.19,1529.5329304490547,Hard,2016,9.0,19.0
+Alexander Zverev,Beijing,2016.10.03,1545.32544301327,Hard,2016,10.0,3.0
+Alexander Zverev,ATP Masters 1000 Shanghai,2016.10.09,1565.617986099723,Hard,2016,10.0,9.0
+Alexander Zverev,Stockholm,2016.10.17,1556.3897535385906,Hard,2016,10.0,17.0
+Alexander Zverev,Australian Open,2017.01.16,1551.1212569699185,Hard,2017,1.0,16.0
+Alexander Zverev,Montpellier,2017.02.06,1608.472085475233,Hard,2017,2.0,6.0
+Alexander Zverev,Rotterdam,2017.02.13,1580.9443953004861,Hard,2017,2.0,13.0
+Alexander Zverev,Marseille,2017.02.20,1549.1578693874924,Hard,2017,2.0,20.0
+Alexander Zverev,ATP Masters 1000 Indian Wells,2017.03.09,1535.0107485481271,Hard,2017,3.0,9.0
+Alexander Zverev,ATP Masters 1000 Miami,2017.03.22,1569.2490050623633,Hard,2017,3.0,22.0
+Alexander Zverev,ATP Masters 1000 Monte Carlo,2017.04.16,1572.3310598319613,Clay,2017,4.0,16.0
+Alexander Zverev,Barcelona,2017.04.24,1545.3677218730927,Clay,2017,4.0,24.0
+Alexander Zverev,Munich,2017.05.01,1592.102408720645,Clay,2017,5.0,1.0
+Alexander Zverev,ATP Masters 1000 Madrid,2017.05.07,1611.4740719802148,Clay,2017,5.0,7.0
+Alexander Zverev,ATP Masters 1000 Rome,2017.05.14,1705.7319672496392,Clay,2017,5.0,14.0
+Alexander Zverev,Roland Garros,2017.05.28,1672.5248531559191,Clay,2017,5.0,28.0
+Alexander Zverev,s-Hertogenbosch,2017.06.12,1651.0597935461747,Grass,2017,6.0,12.0
+Alexander Zverev,Halle,2017.06.19,1679.498100660044,Grass,2017,6.0,19.0
+Alexander Zverev,Wimbledon,2017.07.03,1660.3899203130293,Grass,2017,7.0,3.0
+Alexander Zverev,Washington,2017.07.31,1701.8525760132418,Hard,2017,7.0,31.0
+Alexander Zverev,ATP Masters 1000 Canada,2017.08.07,1765.7498658323486,Hard,2017,8.0,7.0
+Alexander Zverev,ATP Masters 1000 Cincinnati,2017.08.13,1726.816955741333,Hard,2017,8.0,13.0
+Alexander Zverev,US Open,2017.08.28,1693.0882569478274,Hard,2017,8.0,28.0
+Alexander Zverev,Shenzhen,2017.09.25,1665.6021974172202,Hard,2017,9.0,25.0
+Alexander Zverev,Beijing,2017.10.02,1662.9002186883,Hard,2017,10.0,2.0
+Alexander Zverev,ATP Masters 1000 Shanghai,2017.10.08,1646.5961764595174,Hard,2017,10.0,8.0
+Alexander Zverev,Vienna,2017.10.23,1632.4391050259876,Hard,2017,10.0,23.0
+Alexander Zverev,ATP Masters 1000 Paris,2017.10.30,1598.2773231000208,Hard,2017,10.0,30.0
+Alexander Zverev,Nitto ATP Finals,2017.11.12,1589.5925170830967,Hard,2017,11.0,12.0
+Alexander Zverev,Australian Open,2018.01.15,1575.2369341634687,Hard,2018,1.0,15.0
+Alexander Zverev,Rotterdam,2018.02.12,1553.212077949542,Hard,2018,2.0,12.0
+Alexander Zverev,Acapulco,2018.02.26,1563.3361768604416,Hard,2018,2.0,26.0
+Alexander Zverev,ATP Masters 1000 Indian Wells,2018.03.08,1528.6053771659867,Hard,2018,3.0,8.0
+Alexander Zverev,ATP Masters 1000 Miami,2018.03.21,1582.1990545240924,Hard,2018,3.0,21.0
+Alexander Zverev,ATP Masters 1000 Monte Carlo,2018.04.15,1590.2578434069094,Clay,2018,4.0,15.0
+Alexander Zverev,Munich,2018.04.30,1629.821836443849,Clay,2018,4.0,30.0
+Alexander Zverev,ATP Masters 1000 Madrid,2018.05.06,1681.094258168213,Clay,2018,5.0,6.0
+Alexander Zverev,ATP Masters 1000 Rome,2018.05.13,1707.119311772235,Clay,2018,5.0,13.0
+Alexander Zverev,Roland Garros,2018.05.27,1700.934314348535,Clay,2018,5.0,27.0
+Alexander Zverev,Halle,2018.06.18,1669.8891556311248,Grass,2018,6.0,18.0
+Alexander Zverev,Wimbledon,2018.07.02,1640.4662578634939,Grass,2018,7.0,2.0
+Alexander Zverev,Washington,2018.07.30,1683.333722558936,Hard,2018,7.0,30.0
+Alexander Zverev,ATP Masters 1000 Canada,2018.08.06,1663.2372753448826,Hard,2018,8.0,6.0
+Alexander Zverev,ATP Masters 1000 Cincinnati,2018.08.12,1629.5793150704212,Hard,2018,8.0,12.0
+Alexander Zverev,US Open,2018.08.27,1602.5617947949802,Hard,2018,8.0,27.0
+Alexander Zverev,Beijing,2018.10.01,1578.6108010207404,Hard,2018,10.0,1.0
+Alexander Zverev,ATP Masters 1000 Shanghai,2018.10.07,1610.230799854036,Hard,2018,10.0,7.0
+Alexander Zverev,Basel,2018.10.22,1598.5366349218118,Hard,2018,10.0,22.0
+Alexander Zverev,ATP Masters 1000 Paris,2018.10.29,1593.2300356218911,Hard,2018,10.0,29.0
+Alexander Zverev,Nitto ATP Finals,2018.11.11,1604.9376727986441,Hard,2018,11.0,11.0
+Alexander Zverev,Australian Open,2019.01.14,1661.4348167652238,Hard,2019,1.0,14.0
+Alexander Zverev,Abierto Mexicano Telcel presentado por HSBC,2019.02.25,1654.8348738230945,Hard,2019,2.0,25.0
+Alexander Zverev,BNP Paribas Open,2019.03.07,1629.0076369000305,Hard,2019,3.0,7.0
+Alexander Zverev,Miami Open presented by Itau,2019.03.20,1593.7476887903047,Hard,2019,3.0,20.0
+Alexander Zverev,Grand Prix Hassan II,2019.04.08,1562.307690181385,Clay,2019,4.0,8.0
+Alexander Zverev,Rolex Monte-Carlo Masters,2019.04.14,1543.455437843565,Clay,2019,4.0,14.0
+Alexander Zverev,Barcelona Open Banc Sabadell,2019.04.22,1508.796679119471,Clay,2019,4.0,22.0
+Alexander Zverev,BMW Open by FWU,2019.04.29,1486.261585566183,Clay,2019,4.0,29.0
+Alexander Zverev,Mutua Madrid Open,2019.05.05,1497.717367519021,Clay,2019,5.0,5.0
+Alexander Zverev,Internazionali BNL d'Italia,2019.05.12,1474.5890512201806,Clay,2019,5.0,12.0
+Alexander Zverev,Banque Eric Sturdza Geneva Open,2019.05.19,1509.801945833249,Clay,2019,5.0,19.0
+Alexander Zverev,Roland Garros,2019.05.26,1545.3612317235118,Clay,2019,5.0,26.0
+Alexander Zverev,MercedesCup,2019.06.10,1508.9047559233456,Grass,2019,6.0,10.0
+Alexander Zverev,NOVENTI OPEN,2019.06.17,1499.268017948362,Grass,2019,6.0,17.0
+Alexander Zverev,Wimbledon,2019.07.01,1465.1389401974716,Grass,2019,7.0,1.0
+Alexander Zverev,Hamburg European Open,2019.07.22,1483.9587440877044,Clay,2019,7.0,22.0
+Alexander Zverev,Coupe Rogers,2019.08.05,1492.2612678502685,Hard,2019,8.0,5.0
+Alexander Zverev,Western & Southern Open,2019.08.11,1465.379615844519,Hard,2019,8.0,11.0
+Alexander Zverev,US Open,2019.08.26,1484.5789833385559,Hard,2019,8.0,26.0
+Alexander Zverev,China Open,2019.09.30,1507.5868630637913,Hard,2019,9.0,30.0
+Alexander Zverev,Rolex Shanghai Masters,2019.10.06,1582.4998784112615,Hard,2019,10.0,6.0
+Alexander Zverev,Swiss Indoors Basel,2019.10.21,1550.2877785137534,Hard,2019,10.0,21.0
+Alexander Zverev,Rolex Paris Masters,2019.10.28,1535.2676895828067,Hard,2019,10.0,28.0
+Alexander Zverev,Nitto ATP Finals,2019.11.10,1570.61003679784,Hard,2019,11.0,10.0
+Daniil Medvedev,Moscow,2013.10.14,979.7260637576567,Hard,2013,10.0,14.0
+Daniil Medvedev,Moscow,2014.10.13,985.1108465594104,Hard,2014,10.0,13.0
+Daniil Medvedev,Marseille,2015.02.16,996.3590952792492,Hard,2015,2.0,16.0
+Daniil Medvedev,Nice,2015.05.17,992.9464629449291,Clay,2015,5.0,17.0
+Daniil Medvedev,Gstaad,2015.07.27,1020.4350478198294,Clay,2015,7.0,27.0
+Daniil Medvedev,Moscow,2015.10.19,1012.580714696207,Hard,2015,10.0,19.0
+Daniil Medvedev,ATP Masters 1000 Monte Carlo,2016.04.10,1004.7460360872694,Clay,2016,4.0,10.0
+Daniil Medvedev,Nice,2016.05.15,1040.1911442483872,Clay,2016,5.0,15.0
+Daniil Medvedev,s-Hertogenbosch,2016.06.06,1113.0206950174604,Grass,2016,6.0,6.0
+Daniil Medvedev,Wimbledon,2016.06.27,1124.6746961787655,Grass,2016,6.0,27.0
+Daniil Medvedev,Hamburg,2016.07.11,1154.973751836117,Clay,2016,7.0,11.0
+Daniil Medvedev,US Open,2016.08.29,1126.9130150593774,Hard,2016,8.0,29.0
+Daniil Medvedev,St. Petersburg,2016.09.19,1160.0802407055369,Hard,2016,9.0,19.0
+Daniil Medvedev,Moscow,2016.10.17,1222.8394292585026,Hard,2016,10.0,17.0
+Daniil Medvedev,Chennai,2017.01.02,1293.8646820142724,Hard,2017,1.0,2.0
+Daniil Medvedev,Australian Open,2017.01.16,1269.3517544060485,Hard,2017,1.0,16.0
+Daniil Medvedev,Montpellier,2017.02.06,1307.802749383752,Hard,2017,2.0,6.0
+Daniil Medvedev,Marseille,2017.02.20,1336.5112438118715,Hard,2017,2.0,20.0
+Daniil Medvedev,Dubai,2017.02.27,1324.9324840180116,Hard,2017,2.0,27.0
+Daniil Medvedev,ATP Masters 1000 Indian Wells,2017.03.09,1300.069643135463,Hard,2017,3.0,9.0
+Daniil Medvedev,ATP Masters 1000 Monte Carlo,2017.04.16,1279.8385992974822,Clay,2017,4.0,16.0
+Daniil Medvedev,Budapest,2017.04.24,1252.7981900755447,Clay,2017,4.0,24.0
+Daniil Medvedev,Lyon,2017.05.21,1240.7301346235201,Clay,2017,5.0,21.0
+Daniil Medvedev,Roland Garros,2017.05.28,1208.7335931845175,Clay,2017,5.0,28.0
+Daniil Medvedev,s-Hertogenbosch,2017.06.12,1271.3869432576678,Grass,2017,6.0,12.0
+Daniil Medvedev,London - Queen's Club,2017.06.19,1302.7430814384707,Grass,2017,6.0,19.0
+Daniil Medvedev,Eastbourne,2017.06.26,1374.195643730318,Grass,2017,6.0,26.0
+Daniil Medvedev,Wimbledon,2017.07.03,1375.7880550419065,Grass,2017,7.0,3.0
+Daniil Medvedev,Washington,2017.07.31,1424.3699090800126,Hard,2017,7.0,31.0
+Daniil Medvedev,ATP Masters 1000 Canada,2017.08.07,1403.9457411176154,Hard,2017,8.0,7.0
+Daniil Medvedev,ATP Masters 1000 Cincinnati,2017.08.13,1388.3823967811184,Hard,2017,8.0,13.0
+Daniil Medvedev,Winston-Salem,2017.08.20,1366.2878468817914,Hard,2017,8.0,20.0
+Daniil Medvedev,US Open,2017.08.28,1340.1661225826813,Hard,2017,8.0,28.0
+Daniil Medvedev,St. Petersburg,2017.09.18,1309.9076170975745,Hard,2017,9.0,18.0
+Daniil Medvedev,Tokyo,2017.10.02,1297.16339633221,Hard,2017,10.0,2.0
+Daniil Medvedev,ATP Masters 1000 Shanghai,2017.10.08,1283.5373441323793,Hard,2017,10.0,8.0
+Daniil Medvedev,Moscow,2017.10.16,1301.5795577681054,Hard,2017,10.0,16.0
+Daniil Medvedev,ATP Masters 1000 Paris,2017.10.30,1269.640107890768,Hard,2017,10.0,30.0
+Daniil Medvedev,Next Gen ATP Finals,2017.11.07,1298.4498467962724,Hard,2017,11.0,7.0
+Daniil Medvedev,Sydney,2018.01.07,1407.9530824840458,Hard,2018,1.0,7.0
+Daniil Medvedev,Australian Open,2018.01.15,1404.676354523979,Hard,2018,1.0,15.0
+Daniil Medvedev,Montpellier,2018.02.05,1388.6366456227172,Hard,2018,2.0,5.0
+Daniil Medvedev,Rotterdam,2018.02.12,1411.6388016906174,Hard,2018,2.0,12.0
+Daniil Medvedev,ATP Masters 1000 Indian Wells,2018.03.08,1406.4336616390472,Hard,2018,3.0,8.0
+Daniil Medvedev,ATP Masters 1000 Miami,2018.03.21,1406.3399841722887,Hard,2018,3.0,21.0
+Daniil Medvedev,ATP Masters 1000 Monte Carlo,2018.04.15,1407.2215552402613,Clay,2018,4.0,15.0
+Daniil Medvedev,Estoril,2018.04.30,1381.454560627648,Clay,2018,4.0,30.0
+Daniil Medvedev,ATP Masters 1000 Madrid,2018.05.06,1363.5528818098594,Clay,2018,5.0,6.0
+Daniil Medvedev,ATP Masters 1000 Rome,2018.05.13,1339.2238694565588,Clay,2018,5.0,13.0
+Daniil Medvedev,Roland Garros,2018.05.27,1323.4346800513008,Clay,2018,5.0,27.0
+Daniil Medvedev,s-Hertogenbosch,2018.06.11,1324.3323439211242,Grass,2018,6.0,11.0
+Daniil Medvedev,London - Queen's Club,2018.06.18,1329.587677490594,Grass,2018,6.0,18.0
+Daniil Medvedev,Wimbledon,2018.07.02,1356.8599463058638,Grass,2018,7.0,2.0
+Daniil Medvedev,Washington,2018.07.30,1342.1116151042904,Hard,2018,7.0,30.0
+Daniil Medvedev,ATP Masters 1000 Canada,2018.08.06,1379.6804390121524,Hard,2018,8.0,6.0
+Daniil Medvedev,ATP Masters 1000 Cincinnati,2018.08.12,1390.1069187127327,Hard,2018,8.0,12.0
+Daniil Medvedev,Winston-Salem,2018.08.19,1474.267143424667,Hard,2018,8.0,19.0
+Daniil Medvedev,US Open,2018.08.27,1488.9177641609342,Hard,2018,8.0,27.0
+Daniil Medvedev,St. Petersburg,2018.09.17,1488.550252257437,Hard,2018,9.0,17.0
+Daniil Medvedev,Tokyo,2018.10.01,1592.452749162291,Hard,2018,10.0,1.0
+Daniil Medvedev,ATP Masters 1000 Shanghai,2018.10.07,1584.5519686297089,Hard,2018,10.0,7.0
+Daniil Medvedev,Moscow,2018.10.15,1573.6198576784002,Hard,2018,10.0,15.0
+Daniil Medvedev,Basel,2018.10.22,1595.3950161517191,Hard,2018,10.0,22.0
+Daniil Medvedev,ATP Masters 1000 Paris,2018.10.29,1583.2962731811006,Hard,2018,10.0,29.0
+Daniil Medvedev,Brisbane International,2018.12.31,1592.6347933563886,Hard,2018,12.0,31.0
+Daniil Medvedev,Australian Open,2019.01.14,1608.2818760976868,Hard,2019,1.0,14.0
+Daniil Medvedev,Sofia Open,2019.02.04,1646.1580575402609,Hard,2019,2.0,4.0
+Daniil Medvedev,ABN AMRO World Tennis Tournament,2019.02.11,1647.5232580347274,Hard,2019,2.0,11.0
+Daniil Medvedev,Dubai Duty Free Tennis Championships,2019.02.25,1611.641863902106,Hard,2019,2.0,25.0
+Daniil Medvedev,BNP Paribas Open,2019.03.07,1587.5197445917609,Hard,2019,3.0,7.0
+Daniil Medvedev,Miami Open presented by Itau,2019.03.20,1590.6800464714775,Hard,2019,3.0,20.0
+Daniil Medvedev,Rolex Monte-Carlo Masters,2019.04.14,1624.1359524098639,Clay,2019,4.0,14.0
+Daniil Medvedev,Barcelona Open Banc Sabadell,2019.04.22,1632.8765376647198,Clay,2019,4.0,22.0
+Daniil Medvedev,Mutua Madrid Open,2019.05.05,1602.2320678790318,Clay,2019,5.0,5.0
+Daniil Medvedev,Internazionali BNL d'Italia,2019.05.12,1576.00020276839,Clay,2019,5.0,12.0
+Daniil Medvedev,Roland Garros,2019.05.26,1547.134626472526,Clay,2019,5.0,26.0
+Daniil Medvedev,MercedesCup,2019.06.10,1515.607887391709,Grass,2019,6.0,10.0
+Daniil Medvedev,Fever-Tree Championships,2019.06.17,1524.8947842155044,Grass,2019,6.0,17.0
+Daniil Medvedev,Wimbledon,2019.07.01,1512.9459409173326,Grass,2019,7.0,1.0
+Daniil Medvedev,Citi Open,2019.07.27,1526.4384323658655,Hard,2019,7.0,27.0
+Daniil Medvedev,Coupe Rogers,2019.08.05,1585.325989803296,Hard,2019,8.0,5.0
+Daniil Medvedev,Western & Southern Open,2019.08.11,1673.7184354095746,Hard,2019,8.0,11.0
+Daniil Medvedev,US Open,2019.08.26,1693.6424250950124,Hard,2019,8.0,26.0
+Daniil Medvedev,St. Petersburg Open,2019.09.15,1714.2680357738516,Hard,2019,9.0,15.0
+Daniil Medvedev,Rolex Shanghai Masters,2019.10.06,1755.1391906623196,Hard,2019,10.0,6.0
+Daniil Medvedev,Rolex Paris Masters,2019.10.28,1721.1039582230887,Hard,2019,10.0,28.0
+Daniil Medvedev,Nitto ATP Finals,2019.11.10,1655.9022216095934,Hard,2019,11.0,10.0
+Dominic Thiem,Vienna,2010.10.25,989.5098830916053,Hard,2010,10.0,25.0
+Dominic Thiem,Kitzbühel,2011.07.31,980.2502761685056,Clay,2011,7.0,31.0
+Dominic Thiem,Bangkok,2011.09.26,973.7747150645447,Hard,2011,9.0,26.0
+Dominic Thiem,Vienna,2011.10.24,996.961825725906,Hard,2011,10.0,24.0
+Dominic Thiem,Kitzbühel,2012.07.22,982.3933661133377,Clay,2012,7.0,22.0
+Dominic Thiem,Winston-Salem,2012.08.19,973.4986301090449,Hard,2012,8.0,19.0
+Dominic Thiem,Vienna,2012.10.15,997.3460062340176,Hard,2012,10.0,15.0
+Dominic Thiem,Valencia,2012.10.21,988.1084668839245,Hard,2012,10.0,21.0
+Dominic Thiem,Casablanca,2013.04.08,1019.7851119630644,Clay,2013,4.0,8.0
+Dominic Thiem,Bucharest,2013.04.22,1011.592251694331,Clay,2013,4.0,22.0
+Dominic Thiem,Kitzbühel,2013.07.28,1069.2940284691085,Clay,2013,7.0,28.0
+Dominic Thiem,Vienna,2013.10.14,1108.9926263079926,Hard,2013,10.0,14.0
+Dominic Thiem,Doha,2013.12.30,1153.6064587622834,Hard,2013,12.0,30.0
+Dominic Thiem,Australian Open,2014.01.13,1221.227594372317,Hard,2014,1.0,13.0
+Dominic Thiem,Rotterdam,2014.02.10,1266.8433095670641,Hard,2014,2.0,10.0
+Dominic Thiem,Acapulco,2014.02.24,1251.8189053250567,Hard,2014,2.0,24.0
+Dominic Thiem,ATP Masters 1000 Indian Wells,2014.03.06,1290.1754422511844,Hard,2014,3.0,6.0
+Dominic Thiem,ATP Masters 1000 Miami,2014.03.19,1323.3414318269895,Hard,2014,3.0,19.0
+Dominic Thiem,ATP Masters 1000 Monte Carlo,2014.04.13,1302.301713213458,Clay,2014,4.0,13.0
+Dominic Thiem,Barcelona,2014.04.21,1334.4295043162485,Clay,2014,4.0,21.0
+Dominic Thiem,ATP Masters 1000 Madrid,2014.05.04,1398.8594467868168,Clay,2014,5.0,4.0
+Dominic Thiem,Nice,2014.05.18,1388.096210076917,Clay,2014,5.0,18.0
+Dominic Thiem,Roland Garros,2014.05.26,1403.6556756626144,Clay,2014,5.0,26.0
+Dominic Thiem,London - Queen's Club,2014.06.09,1376.1239572239992,Grass,2014,6.0,9.0
+Dominic Thiem,Wimbledon,2014.06.23,1340.3570657559362,Grass,2014,6.0,23.0
+Dominic Thiem,Hamburg,2014.07.14,1353.9163992048775,Clay,2014,7.0,14.0
+Dominic Thiem,Gstaad,2014.07.21,1332.493085101592,Clay,2014,7.0,21.0
+Dominic Thiem,Kitzbühel,2014.07.27,1370.1015153432359,Clay,2014,7.0,27.0
+Dominic Thiem,ATP Masters 1000 Canada,2014.08.04,1349.012665388842,Hard,2014,8.0,4.0
+Dominic Thiem,ATP Masters 1000 Cincinnati,2014.08.10,1322.070664248646,Hard,2014,8.0,10.0
+Dominic Thiem,US Open,2014.08.25,1387.4988073218615,Hard,2014,8.0,25.0
+Dominic Thiem,Tokyo,2014.09.29,1372.3561016024412,Hard,2014,9.0,29.0
+Dominic Thiem,ATP Masters 1000 Shanghai,2014.10.05,1391.7241141611084,Hard,2014,10.0,5.0
+Dominic Thiem,Vienna,2014.10.13,1362.9685656224374,Hard,2014,10.0,13.0
+Dominic Thiem,Basel,2014.10.20,1349.727141232963,Hard,2014,10.0,20.0
+Dominic Thiem,ATP Masters 1000 Paris,2014.10.27,1362.204547278741,Hard,2014,10.0,27.0
+Dominic Thiem,Auckland,2015.01.12,1336.4396174516648,Hard,2015,1.0,12.0
+Dominic Thiem,Australian Open,2015.01.19,1324.4904793017322,Hard,2015,1.0,19.0
+Dominic Thiem,Rotterdam,2015.02.09,1321.3791855146742,Hard,2015,2.0,9.0
+Dominic Thiem,Marseille,2015.02.16,1352.440824569952,Hard,2015,2.0,16.0
+Dominic Thiem,Dubai,2015.02.23,1339.0470052534681,Hard,2015,2.0,23.0
+Dominic Thiem,ATP Masters 1000 Indian Wells,2015.03.12,1312.8038598682715,Hard,2015,3.0,12.0
+Dominic Thiem,ATP Masters 1000 Miami,2015.03.25,1397.0874317646121,Hard,2015,3.0,25.0
+Dominic Thiem,ATP Masters 1000 Monte Carlo,2015.04.12,1367.2772026777636,Clay,2015,4.0,12.0
+Dominic Thiem,Barcelona,2015.04.20,1340.1995538677586,Clay,2015,4.0,20.0
+Dominic Thiem,Munich,2015.04.27,1353.0466564485928,Clay,2015,4.0,27.0
+Dominic Thiem,ATP Masters 1000 Rome,2015.05.10,1394.5958100482785,Clay,2015,5.0,10.0
+Dominic Thiem,Nice,2015.05.17,1481.8283615887603,Clay,2015,5.0,17.0
+Dominic Thiem,Roland Garros,2015.05.24,1466.772698851407,Clay,2015,5.0,24.0
+Dominic Thiem,Stuttgart,2015.06.08,1435.7432870728949,Grass,2015,6.0,8.0
+Dominic Thiem,Halle,2015.06.15,1429.56507361251,Grass,2015,6.0,15.0
+Dominic Thiem,Nottingham,2015.06.21,1415.835163623701,Grass,2015,6.0,21.0
+Dominic Thiem,Wimbledon,2015.06.29,1408.6977583359112,Grass,2015,6.0,29.0
+Dominic Thiem,Umag,2015.07.20,1473.0642883731625,Clay,2015,7.0,20.0
+Dominic Thiem,Gstaad,2015.07.27,1521.166266769131,Clay,2015,7.0,27.0
+Dominic Thiem,Kitzbühel,2015.08.03,1508.8443751953573,Clay,2015,8.0,3.0
+Dominic Thiem,ATP Masters 1000 Canada,2015.08.10,1476.7927691405403,Hard,2015,8.0,10.0
+Dominic Thiem,ATP Masters 1000 Cincinnati,2015.08.16,1446.5975996855425,Hard,2015,8.0,16.0
+Dominic Thiem,US Open,2015.08.31,1454.1058114131245,Hard,2015,8.0,31.0
+Dominic Thiem,St. Petersburg,2015.09.21,1452.007767334274,Hard,2015,9.0,21.0
+Dominic Thiem,Beijing,2015.10.05,1436.6865823573514,Hard,2015,10.0,5.0
+Dominic Thiem,ATP Masters 1000 Shanghai,2015.10.11,1435.6747024920844,Hard,2015,10.0,11.0
+Dominic Thiem,Vienna,2015.10.19,1408.8973677663812,Hard,2015,10.0,19.0
+Dominic Thiem,Basel,2015.10.26,1414.823047565639,Hard,2015,10.0,26.0
+Dominic Thiem,ATP Masters 1000 Paris,2015.11.02,1416.3269073713816,Hard,2015,11.0,2.0
+Dominic Thiem,Brisbane,2016.01.04,1461.2047300974289,Hard,2016,1.0,4.0
+Dominic Thiem,Sydney,2016.01.11,1438.8472860221982,Hard,2016,1.0,11.0
+Dominic Thiem,Australian Open,2016.01.18,1448.4041069923444,Hard,2016,1.0,18.0
+Dominic Thiem,Buenos Aires,2016.02.08,1521.8818711430386,Clay,2016,2.0,8.0
+Dominic Thiem,Rio de Janeiro,2016.02.15,1525.473250824458,Clay,2016,2.0,15.0
+Dominic Thiem,Acapulco,2016.02.22,1587.9169418803574,Hard,2016,2.0,22.0
+Dominic Thiem,ATP Masters 1000 Indian Wells,2016.03.10,1584.6810687598806,Hard,2016,3.0,10.0
+Dominic Thiem,ATP Masters 1000 Miami,2016.03.23,1593.4066608529984,Hard,2016,3.0,23.0
+Dominic Thiem,ATP Masters 1000 Monte Carlo,2016.04.10,1586.172142163441,Clay,2016,4.0,10.0
+Dominic Thiem,Munich,2016.04.25,1585.4817220451116,Clay,2016,4.0,25.0
+Dominic Thiem,ATP Masters 1000 Madrid,2016.05.01,1563.4171169571878,Clay,2016,5.0,1.0
+Dominic Thiem,ATP Masters 1000 Rome,2016.05.08,1608.340981634727,Clay,2016,5.0,8.0
+Dominic Thiem,Nice,2016.05.15,1641.4737694288065,Clay,2016,5.0,15.0
+Dominic Thiem,Roland Garros,2016.05.22,1682.5847445671905,Clay,2016,5.0,22.0
+Dominic Thiem,Stuttgart,2016.06.06,1730.6951560964746,Grass,2016,6.0,6.0
+Dominic Thiem,Halle,2016.06.13,1713.8866242931329,Grass,2016,6.0,13.0
+Dominic Thiem,Wimbledon,2016.06.27,1684.437707704814,Grass,2016,6.0,27.0
+Dominic Thiem,Kitzbühel,2016.07.18,1648.055367081657,Clay,2016,7.0,18.0
+Dominic Thiem,ATP Masters 1000 Canada,2016.07.25,1614.9853114634532,Hard,2016,7.0,25.0
+Dominic Thiem,ATP Masters 1000 Cincinnati,2016.08.14,1630.1739727237564,Hard,2016,8.0,14.0
+Dominic Thiem,US Open,2016.08.29,1633.4420504985128,Hard,2016,8.0,29.0
+Dominic Thiem,Metz,2016.09.19,1629.0904679835846,Hard,2016,9.0,19.0
+Dominic Thiem,Chengdu,2016.09.26,1598.6625149783786,Hard,2016,9.0,26.0
+Dominic Thiem,Beijing,2016.10.03,1574.734792031283,Hard,2016,10.0,3.0
+Dominic Thiem,Vienna,2016.10.24,1549.127531127058,Hard,2016,10.0,24.0
+Dominic Thiem,ATP Masters 1000 Paris,2016.10.31,1528.6662601550754,Hard,2016,10.0,31.0
+Dominic Thiem,ATP Finals,2016.11.13,1535.7521824972232,Hard,2016,11.0,13.0
+Dominic Thiem,Brisbane,2017.01.01,1521.921105143143,Hard,2017,1.0,1.0
+Dominic Thiem,Sydney,2017.01.08,1498.594826446687,Hard,2017,1.0,8.0
+Dominic Thiem,Australian Open,2017.01.16,1504.8932351167075,Hard,2017,1.0,16.0
+Dominic Thiem,Sofia,2017.02.06,1470.9429330778146,Hard,2017,2.0,6.0
+Dominic Thiem,Rotterdam,2017.02.13,1489.030408198897,Hard,2017,2.0,13.0
+Dominic Thiem,Rio de Janeiro,2017.02.20,1548.5460716928071,Clay,2017,2.0,20.0
+Dominic Thiem,Acapulco,2017.02.27,1539.3555927932525,Hard,2017,2.0,27.0
+Dominic Thiem,ATP Masters 1000 Indian Wells,2017.03.09,1568.9054189018564,Hard,2017,3.0,9.0
+Dominic Thiem,ATP Masters 1000 Miami,2017.03.22,1536.6515735965781,Hard,2017,3.0,22.0
+Dominic Thiem,ATP Masters 1000 Monte Carlo,2017.04.16,1528.7885182396344,Clay,2017,4.0,16.0
+Dominic Thiem,Barcelona,2017.04.24,1586.613263786435,Clay,2017,4.0,24.0
+Dominic Thiem,ATP Masters 1000 Madrid,2017.05.07,1625.1278501507095,Clay,2017,5.0,7.0
+Dominic Thiem,ATP Masters 1000 Rome,2017.05.14,1669.7503002578171,Clay,2017,5.0,14.0
+Dominic Thiem,Roland Garros,2017.05.28,1711.5332616656244,Clay,2017,5.0,28.0
+Dominic Thiem,Halle,2017.06.19,1676.6316946145996,Grass,2017,6.0,19.0
+Dominic Thiem,Antalya,2017.06.25,1637.5598167156631,Grass,2017,6.0,25.0
+Dominic Thiem,Wimbledon,2017.07.03,1630.0026175510145,Grass,2017,7.0,3.0
+Dominic Thiem,Washington,2017.07.31,1604.9182144624476,Hard,2017,7.0,31.0
+Dominic Thiem,ATP Masters 1000 Canada,2017.08.07,1573.1014455905354,Hard,2017,8.0,7.0
+Dominic Thiem,ATP Masters 1000 Cincinnati,2017.08.13,1578.6225452896765,Hard,2017,8.0,13.0
+Dominic Thiem,US Open,2017.08.28,1581.3646700294555,Hard,2017,8.0,28.0
+Dominic Thiem,Chengdu,2017.09.25,1549.6875482037292,Hard,2017,9.0,25.0
+Dominic Thiem,Tokyo,2017.10.02,1520.6196381063862,Hard,2017,10.0,2.0
+Dominic Thiem,ATP Masters 1000 Shanghai,2017.10.08,1489.7592961007888,Hard,2017,10.0,8.0
+Dominic Thiem,Vienna,2017.10.23,1483.4918737281387,Hard,2017,10.0,23.0
+Dominic Thiem,ATP Masters 1000 Paris,2017.10.30,1471.7037782900588,Hard,2017,10.0,30.0
+Dominic Thiem,Nitto ATP Finals,2017.11.12,1461.443474925372,Hard,2017,11.0,12.0
+Dominic Thiem,Doha,2018.01.01,1477.392302013346,Hard,2018,1.0,1.0
+Dominic Thiem,Australian Open,2018.01.15,1479.6652665635895,Hard,2018,1.0,15.0
+Dominic Thiem,Buenos Aires,2018.02.12,1537.4663201453704,Clay,2018,2.0,12.0
+Dominic Thiem,Rio de Janeiro,2018.02.19,1517.4004595900767,Clay,2018,2.0,19.0
+Dominic Thiem,Acapulco,2018.02.26,1518.0710077037193,Hard,2018,2.0,26.0
+Dominic Thiem,ATP Masters 1000 Indian Wells,2018.03.08,1497.2562705329958,Hard,2018,3.0,8.0
+Dominic Thiem,ATP Masters 1000 Monte Carlo,2018.04.15,1535.7485933958465,Clay,2018,4.0,15.0
+Dominic Thiem,Barcelona,2018.04.23,1515.752581043982,Clay,2018,4.0,23.0
+Dominic Thiem,ATP Masters 1000 Madrid,2018.05.06,1581.8220481294522,Clay,2018,5.0,6.0
+Dominic Thiem,ATP Masters 1000 Rome,2018.05.13,1552.9682329975653,Clay,2018,5.0,13.0
+Dominic Thiem,Lyon,2018.05.20,1584.000830125512,Clay,2018,5.0,20.0
+Dominic Thiem,Roland Garros,2018.05.27,1648.526435218447,Clay,2018,5.0,27.0
+Dominic Thiem,Halle,2018.06.18,1614.7969515311304,Grass,2018,6.0,18.0
+Dominic Thiem,Wimbledon,2018.07.02,1579.7960297761795,Grass,2018,7.0,2.0
+Dominic Thiem,Hamburg,2018.07.23,1558.3269845217492,Clay,2018,7.0,23.0
+Dominic Thiem,Kitzbühel,2018.07.30,1529.5801954614667,Clay,2018,7.0,30.0
+Dominic Thiem,ATP Masters 1000 Canada,2018.08.06,1507.0458666627146,Hard,2018,8.0,6.0
+Dominic Thiem,US Open,2018.08.27,1554.7468797951983,Hard,2018,8.0,27.0
+Dominic Thiem,St. Petersburg,2018.09.17,1611.2682405888204,Hard,2018,9.0,17.0
+Dominic Thiem,ATP Masters 1000 Shanghai,2018.10.07,1577.7016719628189,Hard,2018,10.0,7.0
+Dominic Thiem,Vienna,2018.10.22,1571.6391579403726,Hard,2018,10.0,22.0
+Dominic Thiem,ATP Masters 1000 Paris,2018.10.29,1586.5880216499088,Hard,2018,10.0,29.0
+Dominic Thiem,Nitto ATP Finals,2018.11.11,1560.8614375424606,Hard,2018,11.0,11.0
+Dominic Thiem,Qatar ExxonMobil Open,2018.12.31,1553.8952344984432,Hard,2018,12.0,31.0
+Dominic Thiem,Australian Open,2019.01.14,1526.0143545200501,Hard,2019,1.0,14.0
+Dominic Thiem,Argentina Open,2019.02.11,1513.7462713747946,Clay,2019,2.0,11.0
+Dominic Thiem,Rio Open presented by Claro,2019.02.18,1479.5905170006556,Clay,2019,2.0,18.0
+Dominic Thiem,BNP Paribas Open,2019.03.07,1587.838811910568,Hard,2019,3.0,7.0
+Dominic Thiem,Miami Open presented by Itau,2019.03.20,1556.6497377123926,Hard,2019,3.0,20.0
+Dominic Thiem,Rolex Monte-Carlo Masters,2019.04.14,1536.171480987442,Clay,2019,4.0,14.0
+Dominic Thiem,Barcelona Open Banc Sabadell,2019.04.22,1625.5410006954426,Clay,2019,4.0,22.0
+Dominic Thiem,Mutua Madrid Open,2019.05.05,1661.8845645642002,Clay,2019,5.0,5.0
+Dominic Thiem,Internazionali BNL d'Italia,2019.05.12,1629.7414367485342,Clay,2019,5.0,12.0
+Dominic Thiem,Roland Garros,2019.05.26,1685.998542650641,Clay,2019,5.0,26.0
+Dominic Thiem,Wimbledon,2019.07.01,1651.5497931388695,Grass,2019,7.0,1.0
+Dominic Thiem,Hamburg European Open,2019.07.22,1627.5167606051364,Clay,2019,7.0,22.0
+Dominic Thiem,Generali Open,2019.07.29,1651.2629132154575,Clay,2019,7.0,29.0
+Dominic Thiem,Coupe Rogers,2019.08.05,1640.419284576986,Hard,2019,8.0,5.0
+Dominic Thiem,US Open,2019.08.26,1603.3795929919254,Hard,2019,8.0,26.0
+Dominic Thiem,China Open,2019.09.30,1656.6937245443523,Hard,2019,9.0,30.0
+Dominic Thiem,Rolex Shanghai Masters,2019.10.06,1649.903261134418,Hard,2019,10.0,6.0
+Dominic Thiem,Erste Bank Open,2019.10.21,1703.0797788796933,Hard,2019,10.0,21.0
+Dominic Thiem,Rolex Paris Masters,2019.10.28,1676.0702714736374,Hard,2019,10.0,28.0
+Dominic Thiem,Nitto ATP Finals,2019.11.10,1694.7212845667386,Hard,2019,11.0,10.0
+Stefanos Tsitsipas,Basel,2016.10.24,1020.5950028175138,Hard,2016,10.0,24.0
+Stefanos Tsitsipas,Australian Open,2017.01.16,1025.499741932995,Hard,2017,1.0,16.0
+Stefanos Tsitsipas,Sofia,2017.02.06,999.0702649021677,Hard,2017,2.0,6.0
+Stefanos Tsitsipas,Rotterdam,2017.02.13,998.0921906480327,Hard,2017,2.0,13.0
+Stefanos Tsitsipas,Marseille,2017.02.20,990.8131873718053,Hard,2017,2.0,20.0
+Stefanos Tsitsipas,Istanbul,2017.05.01,1028.044914564739,Clay,2017,5.0,1.0
+Stefanos Tsitsipas,Roland Garros,2017.05.28,1083.1880317154266,Clay,2017,5.0,28.0
+Stefanos Tsitsipas,s-Hertogenbosch,2017.06.12,1095.7978298217736,Grass,2017,6.0,12.0
+Stefanos Tsitsipas,Wimbledon,2017.07.03,1143.25105749731,Grass,2017,7.0,3.0
+Stefanos Tsitsipas,Kitzbühel,2017.07.31,1129.51420483556,Clay,2017,7.0,31.0
+Stefanos Tsitsipas,US Open,2017.08.28,1141.0673984450746,Hard,2017,8.0,28.0
+Stefanos Tsitsipas,Metz,2017.09.18,1152.7334195569244,Hard,2017,9.0,18.0
+Stefanos Tsitsipas,Chengdu,2017.09.25,1163.738303596191,Hard,2017,9.0,25.0
+Stefanos Tsitsipas,Tokyo,2017.10.02,1200.3073514312348,Hard,2017,10.0,2.0
+Stefanos Tsitsipas,ATP Masters 1000 Shanghai,2017.10.08,1270.14372546277,Hard,2017,10.0,8.0
+Stefanos Tsitsipas,Antwerp,2017.10.16,1352.6191196616835,Hard,2017,10.0,16.0
+Stefanos Tsitsipas,Doha,2018.01.01,1391.9353211836276,Hard,2018,1.0,1.0
+Stefanos Tsitsipas,Auckland,2018.01.08,1363.7143790731384,Hard,2018,1.0,8.0
+Stefanos Tsitsipas,Australian Open,2018.01.15,1337.60680342664,Hard,2018,1.0,15.0
+Stefanos Tsitsipas,Montpellier,2018.02.05,1313.975868358742,Hard,2018,2.0,5.0
+Stefanos Tsitsipas,Rotterdam,2018.02.12,1293.2801316577447,Hard,2018,2.0,12.0
+Stefanos Tsitsipas,Marseille,2018.02.19,1269.0423089070252,Hard,2018,2.0,19.0
+Stefanos Tsitsipas,Dubai,2018.02.26,1291.253901989776,Hard,2018,2.0,26.0
+Stefanos Tsitsipas,ATP Masters 1000 Indian Wells,2018.03.08,1296.3346162167504,Hard,2018,3.0,8.0
+Stefanos Tsitsipas,ATP Masters 1000 Miami,2018.03.21,1282.4684685834657,Hard,2018,3.0,21.0
+Stefanos Tsitsipas,ATP Masters 1000 Monte Carlo,2018.04.15,1322.4979385684026,Clay,2018,4.0,15.0
+Stefanos Tsitsipas,Barcelona,2018.04.23,1422.9201951119016,Clay,2018,4.0,23.0
+Stefanos Tsitsipas,Estoril,2018.04.30,1440.341901786539,Clay,2018,4.0,30.0
+Stefanos Tsitsipas,ATP Masters 1000 Madrid,2018.05.06,1413.5014742786816,Clay,2018,5.0,6.0
+Stefanos Tsitsipas,ATP Masters 1000 Rome,2018.05.13,1455.7279740751196,Clay,2018,5.0,13.0
+Stefanos Tsitsipas,Roland Garros,2018.05.27,1447.942483333338,Clay,2018,5.0,27.0
+Stefanos Tsitsipas,s-Hertogenbosch,2018.06.11,1448.7922475333971,Grass,2018,6.0,11.0
+Stefanos Tsitsipas,Halle,2018.06.18,1437.0250632335276,Grass,2018,6.0,18.0
+Stefanos Tsitsipas,Wimbledon,2018.07.02,1442.6360488387736,Grass,2018,7.0,2.0
+Stefanos Tsitsipas,Washington,2018.07.30,1474.4477267379998,Hard,2018,7.0,30.0
+Stefanos Tsitsipas,ATP Masters 1000 Canada,2018.08.06,1583.6953355670648,Hard,2018,8.0,6.0
+Stefanos Tsitsipas,ATP Masters 1000 Cincinnati,2018.08.12,1558.9690040493042,Hard,2018,8.0,12.0
+Stefanos Tsitsipas,US Open,2018.08.27,1538.8504960114242,Hard,2018,8.0,27.0
+Stefanos Tsitsipas,Metz,2018.09.17,1503.0663010992373,Hard,2018,9.0,17.0
+Stefanos Tsitsipas,Shenzhen,2018.09.24,1474.2992235735364,Hard,2018,9.0,24.0
+Stefanos Tsitsipas,Tokyo,2018.10.01,1486.1298902757565,Hard,2018,10.0,1.0
+Stefanos Tsitsipas,ATP Masters 1000 Shanghai,2018.10.07,1505.4967161980069,Hard,2018,10.0,7.0
+Stefanos Tsitsipas,Stockholm,2018.10.15,1562.527865440187,Hard,2018,10.0,15.0
+Stefanos Tsitsipas,Basel,2018.10.22,1561.7446469413262,Hard,2018,10.0,22.0
+Stefanos Tsitsipas,ATP Masters 1000 Paris,2018.10.29,1527.2240505718592,Hard,2018,10.0,29.0
+Stefanos Tsitsipas,Next Gen ATP Finals,2018.11.06,1568.9070482338996,Hard,2018,11.0,6.0
+Stefanos Tsitsipas,Sydney International,2019.01.06,1541.0885678885766,Hard,2019,1.0,6.0
+Stefanos Tsitsipas,Australian Open,2019.01.14,1615.4770226236462,Hard,2019,1.0,14.0
+Stefanos Tsitsipas,Sofia Open,2019.02.04,1594.4900375068235,Hard,2019,2.0,4.0
+Stefanos Tsitsipas,ABN AMRO World Tennis Tournament,2019.02.11,1559.6726881815287,Hard,2019,2.0,11.0
+Stefanos Tsitsipas,Open 13 Provence,2019.02.18,1594.4672263660516,Hard,2019,2.0,18.0
+Stefanos Tsitsipas,Dubai Duty Free Tennis Championships,2019.02.25,1616.8662051559215,Hard,2019,2.0,25.0
+Stefanos Tsitsipas,BNP Paribas Open,2019.03.07,1581.295132154928,Hard,2019,3.0,7.0
+Stefanos Tsitsipas,Miami Open presented by Itau,2019.03.20,1565.7861573806586,Hard,2019,3.0,20.0
+Stefanos Tsitsipas,Rolex Monte-Carlo Masters,2019.04.14,1556.7148436100367,Clay,2019,4.0,14.0
+Stefanos Tsitsipas,Barcelona Open Banc Sabadell,2019.04.22,1540.8053536385928,Clay,2019,4.0,22.0
+Stefanos Tsitsipas,Millennium Estoril Open,2019.04.29,1570.6822792099124,Clay,2019,4.0,29.0
+Stefanos Tsitsipas,Mutua Madrid Open,2019.05.05,1622.4630987622306,Clay,2019,5.0,5.0
+Stefanos Tsitsipas,Internazionali BNL d'Italia,2019.05.12,1654.5474748165964,Clay,2019,5.0,12.0
+Stefanos Tsitsipas,Roland Garros,2019.05.26,1644.2399412031257,Clay,2019,5.0,26.0
+Stefanos Tsitsipas,Libema Open,2019.06.10,1609.3058240779071,Grass,2019,6.0,10.0
+Stefanos Tsitsipas,Fever-Tree Championships,2019.06.17,1596.6379005264844,Grass,2019,6.0,17.0
+Stefanos Tsitsipas,Wimbledon,2019.07.01,1560.4176041285398,Grass,2019,7.0,1.0
+Stefanos Tsitsipas,Citi Open,2019.07.27,1560.9801868273955,Hard,2019,7.0,27.0
+Stefanos Tsitsipas,Coupe Rogers,2019.08.05,1531.7003809676658,Hard,2019,8.0,5.0
+Stefanos Tsitsipas,Western & Southern Open,2019.08.11,1506.7496126071026,Hard,2019,8.0,11.0
+Stefanos Tsitsipas,US Open,2019.08.26,1482.4584936117706,Hard,2019,8.0,26.0
+Stefanos Tsitsipas,Huajin Securities Zhuhai Championships,2019.09.23,1453.9605314835705,Hard,2019,9.0,23.0
+Stefanos Tsitsipas,China Open,2019.09.30,1509.09859831747,Hard,2019,9.0,30.0
+Stefanos Tsitsipas,Rolex Shanghai Masters,2019.10.06,1559.8177612537024,Hard,2019,10.0,6.0
+Stefanos Tsitsipas,Swiss Indoors Basel,2019.10.21,1581.242321637337,Hard,2019,10.0,21.0
+Stefanos Tsitsipas,Rolex Paris Masters,2019.10.28,1595.6790255572653,Hard,2019,10.0,28.0
+Stefanos Tsitsipas,Nitto ATP Finals,2019.11.10,1627.2558554981406,Hard,2019,11.0,10.0

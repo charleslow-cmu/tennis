@@ -1,4 +1,4 @@
-import googlemaps as googlemaps
+import math
 import pandas as pd
 import os
 import sys
@@ -47,6 +47,8 @@ eur = clean_forex(pd.read_csv("raw/forex/eur.csv"))
 gbp = clean_forex(pd.read_csv("raw/forex/gbp.csv"))
 inflation = clean_inflation(pd.read_csv("raw/forex/inflation.tsv", sep="\t"))
 
+# Load raw data
+# Assume that most recent match is at the top of each file
 def load_raw_data():
     df = pd.DataFrame({})
     years = os.listdir("raw/")
@@ -61,10 +63,12 @@ def load_raw_data():
                 temp['date'] = date
                 temp['surface'] = surface
                 temp['money'] = money
+                temp['match_order'] = temp.shape[0] - pd.Series(temp.index)
                 df = df.append(temp, ignore_index=True)
             except:
                 continue
     return df
+
 
 def safe_int(string):
     try:
@@ -85,6 +89,9 @@ def clean_raw_data(df):
     df['month'] = temp[1].map(safe_int)
     df['day'] = temp[2].map(safe_int)
     df = df[df['year'] > 1975]
+
+    # Sort by match order
+    df = df.sort_values(['year', 'month', 'day', 'match_order']).dropna().reset_index(drop=True)
     return df
 
 
@@ -173,6 +180,51 @@ def make_tournaments(df):
     columns_keep = ['tourney', 'year', 'location', 'lng', 'lat', 'surface', 'money']
     return tournaments.loc[:, columns_keep].reset_index(drop=True)
 
+# Calculate ELO Rating
+# Row by row, initialize dictionary of ELO scores
+def get_elo(dictionary, player):
+    return dictionary[player]
+
+def calc_elo_update(winner_elo, loser_elo, n, factor, k):
+    # Calculate for Winner
+    diff = winner_elo - loser_elo
+    exponent = -(diff / n)
+    prob_winner_win = 1 / (1 + math.pow(factor, exponent))
+    winner_elo_new = winner_elo + k * (1 - prob_winner_win)
+
+    # Calculate for Loser
+    prob_loser_win = 1 - prob_winner_win
+    loser_elo_new = loser_elo + k * (0 - prob_loser_win)
+    return winner_elo_new, loser_elo_new
+
+def get_elo_scores(df, n=400, factor=10, k=50, initial_elo=1000):
+    # Initialize dict
+    elo_dict = {}
+    df['winner_elo'] = 0
+    df['loser_elo'] = 0
+    unique_players = np.unique([df['winner'], df['loser']]).tolist()
+    for player in unique_players:
+        elo_dict[player] = initial_elo
+
+    # Row by row
+    for i in range(df.shape[0]):
+        winner = df.loc[i, "winner"]
+        loser = df.loc[i, "loser"]
+        winner_elo = get_elo(elo_dict, winner)
+        loser_elo = get_elo(elo_dict, loser)
+        winner_elo_new, loser_elo_new = calc_elo_update(winner_elo, loser_elo, n, factor, k)
+
+        # Update dictionary
+        elo_dict[winner] = winner_elo_new
+        elo_dict[loser] = loser_elo_new
+
+        # Update df
+        df.loc[i, "winner_elo"] = winner_elo_new
+        df.loc[i, "loser_elo"] = loser_elo_new
+
+        if i % 10000 == 0:
+            print(i)
+    return df
 
 if __name__ == '__main__':
 
@@ -182,7 +234,7 @@ if __name__ == '__main__':
     df.to_csv("clean/data.csv", index=False)
 
     # Scatterplot
-    df = pd.read_csv("clean/data.csv").dropna()
+    df = pd.read_csv("clean/data.csv")
     df['year'] = df['year'].astype(int)
     player_scores = make_player_scores(df)
     unique_players = player_scores.player.tolist()
@@ -198,3 +250,34 @@ if __name__ == '__main__':
     # Tournaments (with geolocation)
     tournaments = tournaments.dropna()
     tournaments.to_csv("final/tournaments.csv", index=False)
+
+    # Calculate ELO (Takes 10 mins)
+    initial_elo = 1000
+    n = 400
+    factor = 10
+    k = 40
+    df = get_elo_scores(df, n, factor, k, initial_elo)
+    df.to_csv("clean/data_with_elo.csv", index=False)
+
+    # Make ELO Dataframe
+    df = pd.read_csv("clean/data_with_elo.csv")
+    winner_df = df.loc[:, ['winner', 'winner_elo', 'tourney', 'surface', 'date', 'year', 'month', 'day']]
+    winner_df = winner_df.rename(columns={"winner": "player", "winner_elo": "elo"})
+    loser_df = df.loc[:, ['loser', 'loser_elo', 'tourney', 'surface', 'date', 'year', 'month', 'day']]
+    loser_df = loser_df.rename(columns={"loser": "player", "loser_elo": "elo"})
+    elo_df = winner_df.append(loser_df).sort_values(['player', 'year', 'month', 'day'])
+
+    # Get last elo for each tournament
+    elo_df = elo_df.groupby(['player', 'tourney', 'date']).agg(lambda x: x.iloc[-1])
+    elo_df = elo_df.reset_index()
+    elo_df = elo_df.sort_values(['player', 'year', 'month', 'day'])
+
+    players_list = [['Ivan Lendl', 'Bjorn Borg', 'John McEnroe', 'Jimmy Connors'],
+               ['Pete Sampras', 'Andre Agassi', 'Boris Becker', 'Stefan Edberg'],
+               ['Novak Djokovic', 'Roger Federer', 'Andy Murray', 'Rafael Nadal'],
+               ['Alexander Zverev', 'Stefanos Tsitsipas', 'Daniil Medvedev', 'Dominic Thiem']]
+    eras = ["1980s", "1990s", "2000s", "NextGen"]
+    for i in range(len(players_list)):
+        top_players = players_list[i]
+        temp = elo_df[elo_df['player'].isin(top_players)]
+        temp.to_csv("final/elo{}.csv".format(eras[i]), index=False)
