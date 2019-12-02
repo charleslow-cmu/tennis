@@ -64,10 +64,12 @@
     <h2>Data</h2>
     <p>The data used in this blog was scraped from the ATP website at https://www.atptour.com/en/scores/results-archive. Data for each tournament was stored as a separate file, and I scraped data from 1976-2019. Scores were not tracked, only whether player A beat player B, and the order in which matches occurred (which matters for Elo scoring).</p>
     <p>Tournament details (surface, prize money and location) were scraped as well. Prize money was converted from the native currency (EUR, GBP and AUD) into US Dollars, and corrected for inflation using the US historic annual Consumer Price Index. Location was geocoded using Googlemap's Geocode API, but was not validated. Locations that could not be geocoded were discarded.</p>
+    <p>Scripts and code can be found in the corresponding github <a href="https://github.com/charleslow-cmu/tennis">repository</a></p>
 
     <h2>References</h2>
     <ul>
 	    <li>On the Elo algorithm: <a href="https://blog.mackie.io/the-elo-algorithm">https://blog.mackie.io/the-elo-algorithm</a></li>
 	    <li>For the Plotly JS API that was used for the visualisations: <a href="https://plot.ly/javascript/">https://plot.ly/javascript/</a></li>
+	    <li>Web scraping code was adapted from here: <a href="https://github.com/eharpste/TwitchScraper">https://github.com/eharpste/TwitchScraper</a></li>
   </body>
 </html>
