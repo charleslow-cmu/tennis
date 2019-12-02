@@ -58,7 +58,6 @@ function processData(data) {
 	           '%{y} wins, %{x} losses' +
 	           '<extra></extra>'
   });
-  console.log(traces);
 
   // Create a frame for each year  
   var frames = [];
@@ -74,7 +73,6 @@ function processData(data) {
 
 
 function makePlotly(years, traces, frames) {
-  console.log(frames);
 
   // Now create slider steps, one for each frame  
   var sliderSteps = [];

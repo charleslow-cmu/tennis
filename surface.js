@@ -1,10 +1,8 @@
 function makeSurfacePlot() {
-  console.log("Making plot!");
   Plotly.d3.csv("final/surfaces.csv", function(data) { processSurfaceData(data); });
 }
 
 function processSurfaceData(data) {
-  console.log("Process!");
 
   var lookup = {};
   function getData(surface) {
@@ -26,7 +24,6 @@ function processSurfaceData(data) {
     trace.y.push(parseInt(datum.money));
   }
   var surfaces = Object.keys(lookup);
-  console.log(surfaces);
   var colors = ["#ca6a45", "#d2410a", "#7a9755", "#567b96"];
 
   // Create traces
@@ -44,7 +41,6 @@ function processSurfaceData(data) {
       fillcolor: colors[i]
     });
   }
-  console.log(traces);
   
   makeSurfacePlotly(traces);
 };
@@ -64,7 +60,7 @@ function makeSurfacePlotly(traces) {
       zeroline: false
     },
     width: 720,
-    height: 400,
+    height: 450,
     margin: {
       l: 60,
       r: 0,
